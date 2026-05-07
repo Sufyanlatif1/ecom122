@@ -275,83 +275,56 @@
             <!-- No text/button - completely clean -->
         </section>
 
-        <!-- SECTION 2: MULTIMEDIA STORIES - Full Width Images -->
-<section class="py-12 sm:py-16 lg:py-20 w-full">
-    <div class="w-full">
-        
-        <!-- Heading Center -->
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl playfair font-bold text-center text-gray-900 gold-underline mb-10 sm:mb-14 lg:mb-16 px-4">
-            Multimedia Stories
-        </h2>
-        
-        <!-- Desktop: 3 Images Full Width Row -->
-        <div class="hidden sm:flex sm:flex-row w-full h-[300px] sm:h-[400px] lg:h-[500px]">
+          <!-- ============ SECTION 2: MULTIMEDIA STORIES ============ -->
+    <section class="py-20 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <!-- Center Heading -->
+            <h2 class="text-4xl md:text-5xl playfair font-bold text-center text-gray-900 gold-underline mb-16">
+                Multimedia Stories
+            </h2>
             
-            <!-- Image 1 -->
-            <div class="flex-1 border-2 border-yellow-600 overflow-hidden hover-lift m-1 sm:m-2 rounded-xl">
-                <img src="story1.jpg" alt="Story 1" 
-                     class="w-full h-full object-cover"
-                     onerror="this.src='https://placehold.co/800x500/1a2744/c9a84c?text=Story+1'">
-            </div>
-            
-            <!-- Image 2 -->
-            <div class="flex-1 border-2 border-yellow-600 overflow-hidden hover-lift m-1 sm:m-2 rounded-xl">
-                <img src="story2.jpg" alt="Story 2" 
-                     class="w-full h-full object-cover"
-                     onerror="this.src='https://placehold.co/800x500/1a2744/c9a84c?text=Story+2'">
-            </div>
-            
-            <!-- Image 3 -->
-            <div class="flex-1 border-2 border-yellow-600 overflow-hidden hover-lift m-1 sm:m-2 rounded-xl">
-                <img src="story3.jpg" alt="Story 3" 
-                     class="w-full h-full object-cover"
-                     onerror="this.src='https://placehold.co/800x500/1a2744/c9a84c?text=Story+3'">
-            </div>
-            
-        </div>
-        
-        <!-- Mobile: Swiper Slider -->
-        <div class="sm:hidden relative w-full px-4">
-            <div class="overflow-hidden rounded-xl" id="swiperContainer">
-                <div class="flex transition-transform duration-400 ease-out" id="swiperTrack">
-                    
-                    <!-- Slide 1 -->
-                    <div class="flex-shrink-0 w-full px-1">
-                        <div class="border-2 border-yellow-600 rounded-xl overflow-hidden h-[250px]">
-                            <img src="story1.jpg" alt="Story 1" class="w-full h-full object-cover"
-                                 onerror="this.src='https://placehold.co/400x300/1a2744/c9a84c?text=Story+1'">
+            <!-- Full Width Cards Stack -->
+            <div class="flex flex-col gap-8">
+                
+                <!-- Card 1 -->
+                <div class="fade-in w-full bg-white border-l-4 border-yellow-600 shadow-lg hover-lift overflow-hidden">
+                    <div class="flex flex-col md:flex-row">
+                        <img src="story1.jpg" alt="Story 1" class="w-full md:w-[200px] h-[300px] md:h-[500px] object-cover flex-shrink-0" onerror="this.src='https://placehold.co/200x500/1a2744/c9a84c?text=Story+1'">
+                        <div class="p-8 flex flex-col justify-center">
+                            <h3 class="playfair font-bold text-2xl md:text-3xl text-gray-900 mb-4">Breaking Barriers in Journalism</h3>
+                            <p class="text-gray-600 text-lg leading-relaxed">Uncovering the stories that matter to Lahore's citizens. Our investigative team goes beyond headlines to bring you authentic, ground-level reporting from across the city. Every story is meticulously researched and verified.</p>
+                            <p class="text-yellow-600 font-medium mt-4">Read Full Story →</p>
                         </div>
                     </div>
-                    
-                    <!-- Slide 2 -->
-                    <div class="flex-shrink-0 w-full px-1">
-                        <div class="border-2 border-yellow-600 rounded-xl overflow-hidden h-[250px]">
-                            <img src="story2.jpg" alt="Story 2" class="w-full h-full object-cover"
-                                 onerror="this.src='https://placehold.co/400x300/1a2744/c9a84c?text=Story+2'">
-                        </div>
-                    </div>
-                    
-                    <!-- Slide 3 -->
-                    <div class="flex-shrink-0 w-full px-1">
-                        <div class="border-2 border-yellow-600 rounded-xl overflow-hidden h-[250px]">
-                            <img src="story3.jpg" alt="Story 3" class="w-full h-full object-cover"
-                                 onerror="this.src='https://placehold.co/400x300/1a2744/c9a84c?text=Story+3'">
-                        </div>
-                    </div>
-                    
                 </div>
-            </div>
-            
-            <!-- Dots Indicator -->
-            <div class="flex justify-center items-center gap-2 mt-4" id="swiperDots">
-                <div class="swiper-dot active" data-index="0"></div>
-                <div class="swiper-dot" data-index="1"></div>
-                <div class="swiper-dot" data-index="2"></div>
+                
+                <!-- Card 2 -->
+                <div class="fade-in w-full bg-white border-l-4 border-yellow-600 shadow-lg hover-lift overflow-hidden">
+                    <div class="flex flex-col md:flex-row">
+                        <img src="story2.jpg" alt="Story 2" class="w-full md:w-[200px] h-[300px] md:h-[500px] object-cover flex-shrink-0" onerror="this.src='https://placehold.co/200x500/1a2744/c9a84c?text=Story+2'">
+                        <div class="p-8 flex flex-col justify-center">
+                            <h3 class="playfair font-bold text-2xl md:text-3xl text-gray-900 mb-4">Voice of the Walled City</h3>
+                            <p class="text-gray-600 text-lg leading-relaxed">From the ancient streets of Lahore's walled city to modern downtown, we capture the pulse of cultural transformation. Our multimedia team documents the living heritage and contemporary challenges.</p>
+                            <p class="text-yellow-600 font-medium mt-4">Read Full Story →</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="fade-in w-full bg-white border-l-4 border-yellow-600 shadow-lg hover-lift overflow-hidden">
+                    <div class="flex flex-col md:flex-row">
+                        <img src="story3.jpg" alt="Story 3" class="w-full md:w-[200px] h-[300px] md:h-[500px] object-cover flex-shrink-0" onerror="this.src='https://placehold.co/200x500/1a2744/c9a84c?text=Story+3'">
+                        <div class="p-8 flex flex-col justify-center">
+                            <h3 class="playfair font-bold text-2xl md:text-3xl text-gray-900 mb-4">Championing Press Freedom</h3>
+                            <p class="text-gray-600 text-lg leading-relaxed">In an era of misinformation, we stand firm for journalistic integrity. Our council advocates for media rights, ethical reporting, and the protection of journalists across Punjab. Truth is our foundation.</p>
+                            <p class="text-yellow-600 font-medium mt-4">Read Full Story →</p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
-        
-    </div>
-</section>
+    </section>
         <!-- SECTION 3: PRESIDENT'S MESSAGE -->
         <section class="bg-gray-50 py-12 sm:py-16 lg:py-20 w-full">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

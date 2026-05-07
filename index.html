@@ -264,7 +264,7 @@
         
         <!-- SECTION 1: HERO BANNER -->
         <section class="relative w-full hero-height overflow-hidden">
-            <!-- Dark overlay -->
+           
            
             <!-- Background image with Ken Burns -->
             <div class="absolute inset-0 w-full h-full">
@@ -275,113 +275,71 @@
             <!-- No text/button - completely clean -->
         </section>
 
-        <!-- SECTION 2: MULTIMEDIA STORIES (Rectangle Cards) -->
+        <!-- SECTION 2: MULTIMEDIA STORIES - Only Pictures, No Text -->
 <section class="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 w-full">
     <div class="max-w-7xl mx-auto">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl playfair font-bold text-center text-gray-900 gold-underline mb-10 sm:mb-14 lg:mb-16">
             Multimedia Stories
         </h2>
         
-        <!-- Desktop & Tablet Grid with Rectangle Cards -->
-        <div class="hidden sm:flex sm:flex-wrap sm:justify-center gap-6 lg:gap-8">
+        <!-- Desktop & Tablet - Center aligned pictures only -->
+        <div class="hidden sm:flex sm:flex-wrap sm:justify-center sm:items-center gap-6 lg:gap-8">
             
-            <!-- Card 1 - Rectangle (190×290) -->
-            <div class="fade-in-up bg-white rounded-2xl border-2 border-yellow-600 shadow-lg hover-lift overflow-hidden" 
+            <!-- Card 1 - Only Picture -->
+            <div class="fade-in-up rounded-2xl border-2 border-yellow-600 overflow-hidden hover-lift" 
                  style="width: 190px; height: 290px;">
-                <div class="h-full flex flex-col">
-                    <div class="h-[180px] overflow-hidden">
-                        <img src="story1.jpg" alt="Story 1" 
-                             class="w-full h-full object-cover"
-                             onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+1'">
-                    </div>
-                    <div class="p-3 flex-1 flex flex-col justify-center">
-                        <h3 class="playfair font-bold text-sm text-gray-900 text-center">Breaking Barriers</h3>
-                    </div>
-                </div>
+                <img src="story1.jpg" alt="Story 1" 
+                     class="w-full h-full object-cover"
+                     onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+1'">
             </div>
             
-            <!-- Card 2 - Rectangle (190×290) -->
-            <div class="fade-in-up bg-white rounded-2xl border-2 border-yellow-600 shadow-lg hover-lift overflow-hidden" 
+            <!-- Card 2 - Only Picture -->
+            <div class="fade-in-up rounded-2xl border-2 border-yellow-600 overflow-hidden hover-lift" 
                  style="width: 190px; height: 290px;">
-                <div class="h-full flex flex-col">
-                    <div class="h-[180px] overflow-hidden">
-                        <img src="story2.jpg" alt="Story 2" 
-                             class="w-full h-full object-cover"
-                             onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+2'">
-                    </div>
-                    <div class="p-3 flex-1 flex flex-col justify-center">
-                        <h3 class="playfair font-bold text-sm text-gray-900 text-center">Voice of People</h3>
-                    </div>
-                </div>
+                <img src="story2.jpg" alt="Story 2" 
+                     class="w-full h-full object-cover"
+                     onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+2'">
             </div>
             
-            <!-- Card 3 - Rectangle (190×290) -->
-            <div class="fade-in-up bg-white rounded-2xl border-2 border-yellow-600 shadow-lg hover-lift overflow-hidden" 
+            <!-- Card 3 - Only Picture -->
+            <div class="fade-in-up rounded-2xl border-2 border-yellow-600 overflow-hidden hover-lift" 
                  style="width: 190px; height: 290px;">
-                <div class="h-full flex flex-col">
-                    <div class="h-[180px] overflow-hidden">
-                        <img src="story3.jpg" alt="Story 3" 
-                             class="w-full h-full object-cover"
-                             onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+3'">
-                    </div>
-                    <div class="p-3 flex-1 flex flex-col justify-center">
-                        <h3 class="playfair font-bold text-sm text-gray-900 text-center">Media Freedom</h3>
-                    </div>
-                </div>
+                <img src="story3.jpg" alt="Story 3" 
+                     class="w-full h-full object-cover"
+                     onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+3'">
             </div>
             
         </div>
         
-        <!-- Mobile Swiper with same rectangle cards -->
+        <!-- Mobile Swiper - Only Pictures -->
         <div class="sm:hidden relative w-full flex justify-center">
             <div class="overflow-hidden rounded-2xl" id="swiperContainer" style="width: 190px;">
                 <div class="flex transition-transform duration-400 ease-out" id="swiperTrack">
                     
                     <!-- Slide 1 -->
                     <div class="flex-shrink-0" style="width: 190px;">
-                        <div class="bg-white rounded-2xl border-2 border-yellow-600 shadow-lg overflow-hidden" 
+                        <div class="rounded-2xl border-2 border-yellow-600 overflow-hidden" 
                              style="width: 190px; height: 290px;">
-                            <div class="h-full flex flex-col">
-                                <div class="h-[180px] overflow-hidden">
-                                    <img src="story1.jpg" alt="Story 1" class="w-full h-full object-cover"
-                                         onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+1'">
-                                </div>
-                                <div class="p-3 flex-1 flex flex-col justify-center">
-                                    <h3 class="playfair font-bold text-sm text-gray-900 text-center">Breaking Barriers</h3>
-                                </div>
-                            </div>
+                            <img src="story1.jpg" alt="Story 1" class="w-full h-full object-cover"
+                                 onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+1'">
                         </div>
                     </div>
                     
                     <!-- Slide 2 -->
                     <div class="flex-shrink-0" style="width: 190px;">
-                        <div class="bg-white rounded-2xl border-2 border-yellow-600 shadow-lg overflow-hidden" 
+                        <div class="rounded-2xl border-2 border-yellow-600 overflow-hidden" 
                              style="width: 190px; height: 290px;">
-                            <div class="h-full flex flex-col">
-                                <div class="h-[180px] overflow-hidden">
-                                    <img src="story2.jpg" alt="Story 2" class="w-full h-full object-cover"
-                                         onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+2'">
-                                </div>
-                                <div class="p-3 flex-1 flex flex-col justify-center">
-                                    <h3 class="playfair font-bold text-sm text-gray-900 text-center">Voice of People</h3>
-                                </div>
-                            </div>
+                            <img src="story2.jpg" alt="Story 2" class="w-full h-full object-cover"
+                                 onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+2'">
                         </div>
                     </div>
                     
                     <!-- Slide 3 -->
                     <div class="flex-shrink-0" style="width: 190px;">
-                        <div class="bg-white rounded-2xl border-2 border-yellow-600 shadow-lg overflow-hidden" 
+                        <div class="rounded-2xl border-2 border-yellow-600 overflow-hidden" 
                              style="width: 190px; height: 290px;">
-                            <div class="h-full flex flex-col">
-                                <div class="h-[180px] overflow-hidden">
-                                    <img src="story3.jpg" alt="Story 3" class="w-full h-full object-cover"
-                                         onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+3'">
-                                </div>
-                                <div class="p-3 flex-1 flex flex-col justify-center">
-                                    <h3 class="playfair font-bold text-sm text-gray-900 text-center">Media Freedom</h3>
-                                </div>
-                            </div>
+                            <img src="story3.jpg" alt="Story 3" class="w-full h-full object-cover"
+                                 onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+3'">
                         </div>
                     </div>
                     
@@ -398,7 +356,6 @@
         
     </div>
 </section>
-
         <!-- SECTION 3: PRESIDENT'S MESSAGE -->
         <section class="bg-gray-50 py-12 sm:py-16 lg:py-20 w-full">
             <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">

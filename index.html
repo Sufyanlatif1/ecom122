@@ -265,7 +265,7 @@
         <!-- SECTION 1: HERO BANNER -->
         <section class="relative w-full hero-height overflow-hidden">
             <!-- Dark overlay -->
-            <div class="absolute inset-0 bg-black/50 z-10"></div>
+           
             <!-- Background image with Ken Burns -->
             <div class="absolute inset-0 w-full h-full">
                 <img src="hero.jpg" alt="Lahore Media Council Hero" 
@@ -275,109 +275,129 @@
             <!-- No text/button - completely clean -->
         </section>
 
-        <!-- SECTION 2: MULTIMEDIA STORIES -->
-        <section class="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 w-full">
-            <div class="max-w-7xl mx-auto">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl playfair font-bold text-center text-gray-900 gold-underline mb-10 sm:mb-14 lg:mb-16">
-                    Multimedia Stories
-                </h2>
-                
-                <!-- Desktop & Tablet Grid -->
-                <div class="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-8">
-                    <!-- Card 1 -->
-                    <div class="fade-in-up bg-white border-l-4 border-yellow-600 shadow-md hover-lift">
-                        <div class="h-48 sm:h-56 lg:h-72 overflow-hidden">
-                            <img src="story1.jpg" alt="Story 1" 
-                                 class="w-full h-full object-cover"
-                                 onerror="this.src='https://placehold.co/600x400/1a2744/c9a84c?text=Story+1'">
-                        </div>
-                        <div class="p-4 sm:p-5 lg:p-6">
-                            <h3 class="playfair font-bold text-lg sm:text-xl lg:text-2xl text-gray-900">Breaking Barriers</h3>
-                            <p class="text-gray-600 text-xs sm:text-sm mt-2">Uncovering the stories that shape Lahore's future.</p>
-                        </div>
+        <!-- SECTION 2: MULTIMEDIA STORIES (Rectangle Cards) -->
+<section class="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 w-full">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl playfair font-bold text-center text-gray-900 gold-underline mb-10 sm:mb-14 lg:mb-16">
+            Multimedia Stories
+        </h2>
+        
+        <!-- Desktop & Tablet Grid with Rectangle Cards -->
+        <div class="hidden sm:flex sm:flex-wrap sm:justify-center gap-6 lg:gap-8">
+            
+            <!-- Card 1 - Rectangle (190×290) -->
+            <div class="fade-in-up bg-white rounded-2xl border-2 border-yellow-600 shadow-lg hover-lift overflow-hidden" 
+                 style="width: 190px; height: 290px;">
+                <div class="h-full flex flex-col">
+                    <div class="h-[180px] overflow-hidden">
+                        <img src="story1.jpg" alt="Story 1" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+1'">
                     </div>
-                    
-                    <!-- Card 2 -->
-                    <div class="fade-in-up bg-white border-l-4 border-yellow-600 shadow-md hover-lift">
-                        <div class="h-48 sm:h-56 lg:h-72 overflow-hidden">
-                            <img src="story2.jpg" alt="Story 2" 
-                                 class="w-full h-full object-cover"
-                                 onerror="this.src='https://placehold.co/600x400/1a2744/c9a84c?text=Story+2'">
-                        </div>
-                        <div class="p-4 sm:p-5 lg:p-6">
-                            <h3 class="playfair font-bold text-lg sm:text-xl lg:text-2xl text-gray-900">Voice of People</h3>
-                            <p class="text-gray-600 text-xs sm:text-sm mt-2">Amplifying voices that need to be heard.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Card 3 -->
-                    <div class="fade-in-up bg-white border-l-4 border-yellow-600 shadow-md hover-lift sm:col-span-2 lg:col-span-1 sm:max-w-md sm:mx-auto lg:max-w-none sm:w-full">
-                        <div class="h-48 sm:h-56 lg:h-72 overflow-hidden">
-                            <img src="story3.jpg" alt="Story 3" 
-                                 class="w-full h-full object-cover"
-                                 onerror="this.src='https://placehold.co/600x400/1a2744/c9a84c?text=Story+3'">
-                        </div>
-                        <div class="p-4 sm:p-5 lg:p-6">
-                            <h3 class="playfair font-bold text-lg sm:text-xl lg:text-2xl text-gray-900">Media Freedom</h3>
-                            <p class="text-gray-600 text-xs sm:text-sm mt-2">Championing press freedom across Pakistan.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Mobile Swiper -->
-                <div class="sm:hidden relative w-full">
-                    <div class="overflow-hidden rounded-lg" id="swiperContainer">
-                        <div class="flex transition-transform duration-400 ease-out" id="swiperTrack">
-                            <!-- Slide 1 -->
-                            <div class="flex-shrink-0 w-full px-1">
-                                <div class="bg-white border-l-4 border-yellow-600 shadow-md">
-                                    <div class="h-52 overflow-hidden">
-                                        <img src="story1.jpg" alt="Story 1" class="w-full h-full object-cover" 
-                                             onerror="this.src='https://placehold.co/600x400/1a2744/c9a84c?text=Story+1'">
-                                    </div>
-                                    <div class="p-4">
-                                        <h3 class="playfair font-bold text-lg text-gray-900">Breaking Barriers</h3>
-                                        <p class="text-gray-600 text-xs mt-1">Uncovering stories that shape Lahore.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Slide 2 -->
-                            <div class="flex-shrink-0 w-full px-1">
-                                <div class="bg-white border-l-4 border-yellow-600 shadow-md">
-                                    <div class="h-52 overflow-hidden">
-                                        <img src="story2.jpg" alt="Story 2" class="w-full h-full object-cover"
-                                             onerror="this.src='https://placehold.co/600x400/1a2744/c9a84c?text=Story+2'">
-                                    </div>
-                                    <div class="p-4">
-                                        <h3 class="playfair font-bold text-lg text-gray-900">Voice of People</h3>
-                                        <p class="text-gray-600 text-xs mt-1">Amplifying important voices.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Slide 3 -->
-                            <div class="flex-shrink-0 w-full px-1">
-                                <div class="bg-white border-l-4 border-yellow-600 shadow-md">
-                                    <div class="h-52 overflow-hidden">
-                                        <img src="story3.jpg" alt="Story 3" class="w-full h-full object-cover"
-                                             onerror="this.src='https://placehold.co/600x400/1a2744/c9a84c?text=Story+3'">
-                                    </div>
-                                    <div class="p-4">
-                                        <h3 class="playfair font-bold text-lg text-gray-900">Media Freedom</h3>
-                                        <p class="text-gray-600 text-xs mt-1">Championing press freedom.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Dots Indicator -->
-                    <div class="flex justify-center items-center gap-2 mt-4" id="swiperDots">
-                        <div class="swiper-dot active" data-index="0"></div>
-                        <div class="swiper-dot" data-index="1"></div>
-                        <div class="swiper-dot" data-index="2"></div>
+                    <div class="p-3 flex-1 flex flex-col justify-center">
+                        <h3 class="playfair font-bold text-sm text-gray-900 text-center">Breaking Barriers</h3>
                     </div>
                 </div>
             </div>
-        </section>
+            
+            <!-- Card 2 - Rectangle (190×290) -->
+            <div class="fade-in-up bg-white rounded-2xl border-2 border-yellow-600 shadow-lg hover-lift overflow-hidden" 
+                 style="width: 190px; height: 290px;">
+                <div class="h-full flex flex-col">
+                    <div class="h-[180px] overflow-hidden">
+                        <img src="story2.jpg" alt="Story 2" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+2'">
+                    </div>
+                    <div class="p-3 flex-1 flex flex-col justify-center">
+                        <h3 class="playfair font-bold text-sm text-gray-900 text-center">Voice of People</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 3 - Rectangle (190×290) -->
+            <div class="fade-in-up bg-white rounded-2xl border-2 border-yellow-600 shadow-lg hover-lift overflow-hidden" 
+                 style="width: 190px; height: 290px;">
+                <div class="h-full flex flex-col">
+                    <div class="h-[180px] overflow-hidden">
+                        <img src="story3.jpg" alt="Story 3" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+3'">
+                    </div>
+                    <div class="p-3 flex-1 flex flex-col justify-center">
+                        <h3 class="playfair font-bold text-sm text-gray-900 text-center">Media Freedom</h3>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Mobile Swiper with same rectangle cards -->
+        <div class="sm:hidden relative w-full flex justify-center">
+            <div class="overflow-hidden rounded-2xl" id="swiperContainer" style="width: 190px;">
+                <div class="flex transition-transform duration-400 ease-out" id="swiperTrack">
+                    
+                    <!-- Slide 1 -->
+                    <div class="flex-shrink-0" style="width: 190px;">
+                        <div class="bg-white rounded-2xl border-2 border-yellow-600 shadow-lg overflow-hidden" 
+                             style="width: 190px; height: 290px;">
+                            <div class="h-full flex flex-col">
+                                <div class="h-[180px] overflow-hidden">
+                                    <img src="story1.jpg" alt="Story 1" class="w-full h-full object-cover"
+                                         onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+1'">
+                                </div>
+                                <div class="p-3 flex-1 flex flex-col justify-center">
+                                    <h3 class="playfair font-bold text-sm text-gray-900 text-center">Breaking Barriers</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="flex-shrink-0" style="width: 190px;">
+                        <div class="bg-white rounded-2xl border-2 border-yellow-600 shadow-lg overflow-hidden" 
+                             style="width: 190px; height: 290px;">
+                            <div class="h-full flex flex-col">
+                                <div class="h-[180px] overflow-hidden">
+                                    <img src="story2.jpg" alt="Story 2" class="w-full h-full object-cover"
+                                         onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+2'">
+                                </div>
+                                <div class="p-3 flex-1 flex flex-col justify-center">
+                                    <h3 class="playfair font-bold text-sm text-gray-900 text-center">Voice of People</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="flex-shrink-0" style="width: 190px;">
+                        <div class="bg-white rounded-2xl border-2 border-yellow-600 shadow-lg overflow-hidden" 
+                             style="width: 190px; height: 290px;">
+                            <div class="h-full flex flex-col">
+                                <div class="h-[180px] overflow-hidden">
+                                    <img src="story3.jpg" alt="Story 3" class="w-full h-full object-cover"
+                                         onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+3'">
+                                </div>
+                                <div class="p-3 flex-1 flex flex-col justify-center">
+                                    <h3 class="playfair font-bold text-sm text-gray-900 text-center">Media Freedom</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- Dots Indicator (Mobile only) -->
+        <div class="sm:hidden flex justify-center items-center gap-2 mt-4" id="swiperDots">
+            <div class="swiper-dot active" data-index="0"></div>
+            <div class="swiper-dot" data-index="1"></div>
+            <div class="swiper-dot" data-index="2"></div>
+        </div>
+        
+    </div>
+</section>
 
         <!-- SECTION 3: PRESIDENT'S MESSAGE -->
         <section class="bg-gray-50 py-12 sm:py-16 lg:py-20 w-full">

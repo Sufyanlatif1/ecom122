@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>About Us • Lahore Media Council</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background: #ffffff; color: #1f2937; margin: 0; -webkit-overflow-scrolling: touch; }
+    h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+    .gold-text { color: #c9a84c; }
+    .gold-bg { background-color: #c9a84c; }
+    .navy-bg { background-color: #1a2744; }
+    .navy-text { color: #1a2744; }
+    .transition-smooth { transition: all 0.3s ease; }
+    .tap-highlight { -webkit-tap-highlight-color: rgba(201,168,76,0.2); }
+    .hover-lift { transition: transform 0.25s ease, box-shadow 0.3s ease; }
+    .hover-lift:hover { transform: translateY(-6px); box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); }
+    @keyframes pulse-gold { 0% { box-shadow: 0 0 0 0 rgba(201,168,76,0.6); } 70% { box-shadow: 0 0 0 10px rgba(201,168,76,0); } 100% { box-shadow: 0 0 0 0 rgba(201,168,76,0); } }
+    .pulse-whatsapp { animation: pulse-gold 2s infinite; }
+    .nav-active { color: #c9a84c !important; border-bottom: 2px solid #c9a84c; }
+    .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-in-out; }
+    .mobile-menu.open { max-height: 350px; }
+  </style>
+</head>
+<body class="antialiased">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
+    <a href="home.html" class="flex items-center gap-2 md:gap-3 flex-shrink-0">
+      <img src="logo.png" alt="LMC Logo" class="h-10 w-10 md:h-12 md:w-12 object-contain" loading="lazy"/>
+      <span class="font-serif font-bold text-lg md:text-2xl navy-text tracking-tight">LAHORE MEDIA COUNCIL</span>
+    </a>
+    <nav class="hidden md:flex items-center space-x-6 lg:space-x-8 text-sm lg:text-base font-medium">
+      <a href="home.html" class="text-gray-700 hover:text-[#c9a84c] transition">Home</a>
+      <a href="about.html" class="nav-active text-gray-700 hover:text-[#c9a84c] transition">About Us</a>
+      <a href="contact.html" class="text-gray-700 hover:text-[#c9a84c] transition">Contact</a>
+      <a href="membership.html" class="text-gray-700 hover:text-[#c9a84c] transition">Membership</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="https://wa.me/923004293732" target="_blank" class="pulse-whatsapp hidden sm:flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-full text-sm font-semibold shadow-md transition tap-highlight">
+        <i class="ri-whatsapp-line text-xl"></i> <span class="hidden lg:inline">WhatsApp</span>
+      </a>
+      <a href="https://wa.me/923004293732" target="_blank" class="sm:hidden flex items-center justify-center w-11 h-11 bg-green-500 rounded-full text-white shadow-md pulse-whatsapp tap-highlight">
+        <i class="ri-whatsapp-line text-2xl"></i>
+      </a>
+      <button id="menu-toggle" class="md:hidden text-3xl navy-text p-2 focus:outline-none tap-highlight" aria-label="Menu">
+        <i class="ri-menu-line" id="menu-icon"></i>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t border-gray-100">
+    <div class="flex flex-col px-5 py-3 space-y-3 text-lg font-medium">
+      <a href="home.html" class="py-2 text-gray-700">Home</a>
+      <a href="about.html" class="nav-active py-2">About Us</a>
+      <a href="contact.html" class="py-2 text-gray-700">Contact</a>
+      <a href="membership.html" class="py-2 text-gray-700">Membership</a>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT PAGE CONTENT -->
+<main>
+  <!-- 25 Years In Action Section -->
+  <section class="py-16 md:py-24 px-4 max-w-7xl mx-auto">
+    <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+      <!-- Image Container - Full Image Fit -->
+      <div class="w-full lg:w-1/2 overflow-hidden rounded-2xl shadow-2xl bg-gray-100">
+        <img src="about-main.jpg" alt="About Lahore Media Council" class="w-full h-auto max-h-[500px] object-contain object-center hover:scale-105 transition-transform duration-700" loading="lazy">
+      </div>
+      <!-- Text Content -->
+      <div class="w-full lg:w-1/2 text-center lg:text-left">
+        <h1 class="font-serif text-4xl md:text-5xl font-bold navy-text mb-6">25 Years In Action</h1>
+        <div class="space-y-4 text-gray-700 leading-relaxed text-base md:text-lg">
+          <p>Founded in 1999, the Lahore Media Council has been the cornerstone of ethical journalism in the heart of Punjab. For over two decades, we have championed press freedom, nurtured investigative reporting, and provided a unified platform for media professionals across Lahore.</p>
+          <p>Our mission is to uphold the highest standards of truth, accuracy, and fairness. We believe that a well-informed public is the foundation of a strong democracy. Through training workshops, press briefings, and advocacy, we empower journalists to tell stories that matter.</p>
+          <p>From the bustling newsrooms of old Lahore to the digital frontiers of today, the Council remains a steadfast guardian of journalistic integrity and a voice for the voiceless.</p>
+        </div>
+        <div class="mt-8 inline-block bg-[#1a2744] text-[#c9a84c] px-6 py-3 rounded-full font-bold text-lg shadow-md">
+          Established 1999
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Group Photo Section -->
+  <section class="relative w-full h-[250px] md:h-[500px] bg-cover bg-center mt-8" style="background-image: url('team-photo.jpg');">
+    <div class="absolute inset-0 bg-[#1a2744]/60 flex items-center justify-center">
+      <h2 class="font-serif text-4xl md:text-6xl font-bold text-white drop-shadow-lg">Our Team</h2>
+    </div>
+  </section>
+
+  <!-- Additional space for flow -->
+  <div class="py-10"></div>
+</main>
+
+<!-- FOOTER -->
+<footer class="navy-bg text-white py-12 px-4">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+    <div class="flex flex-col items-center md:items-start">
+      <div class="flex items-center gap-2 mb-3">
+        <img src="logo.png" alt="logo" class="h-10 w-10" loading="lazy">
+        <span class="font-serif font-bold text-xl">LAHORE MEDIA COUNCIL</span>
+      </div>
+      <p class="text-gray-300 text-sm">Defending press freedom and journalistic excellence since 1999.</p>
+    </div>
+    <div>
+      <h4 class="font-semibold text-lg mb-3 gold-text">Quick Links</h4>
+      <ul class="space-y-2 text-sm">
+        <li><a href="home.html" class="hover:text-[#c9a84c]">Home</a></li>
+        <li><a href="about.html" class="hover:text-[#c9a84c]">About Us</a></li>
+        <li><a href="contact.html" class="hover:text-[#c9a84c]">Contact</a></li>
+        <li><a href="membership.html" class="hover:text-[#c9a84c]">Membership</a></li>
+      </ul>
+    </div>
+    <div class="flex flex-col items-center md:items-start">
+      <h4 class="font-semibold text-lg mb-3 gold-text">Connect</h4>
+      <div class="flex space-x-4 text-2xl mb-4">
+        <a href="#" class="hover:text-[#c9a84c]"><i class="ri-facebook-fill"></i></a>
+        <a href="#" class="hover:text-[#c9a84c]"><i class="ri-instagram-line"></i></a>
+        <a href="https://wa.me/923004293732" class="hover:text-[#c9a84c]"><i class="ri-whatsapp-line"></i></a>
+        <a href="#" class="hover:text-[#c9a84c]"><i class="ri-youtube-fill"></i></a>
+      </div>
+      <p class="text-xs text-gray-400">© 2024 Lahore Media Council. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    const menu = document.getElementById('mobile-menu');
+    const icon = document.getElementById('menu-icon');
+    menu.classList.toggle('open');
+    icon.className = menu.classList.contains('open') ? 'ri-close-line' : 'ri-menu-line';
+  });
+</script>
+</body>
+</html>

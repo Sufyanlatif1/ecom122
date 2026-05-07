@@ -275,83 +275,79 @@
             <!-- No text/button - completely clean -->
         </section>
 
-        <!-- SECTION 2: MULTIMEDIA STORIES - Only Pictures, No Text -->
-<section class="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 w-full">
-    <div class="max-w-7xl mx-auto">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl playfair font-bold text-center text-gray-900 gold-underline mb-10 sm:mb-14 lg:mb-16">
+        <!-- SECTION 2: MULTIMEDIA STORIES - Full Width Images -->
+<section class="py-12 sm:py-16 lg:py-20 w-full">
+    <div class="w-full">
+        
+        <!-- Heading Center -->
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl playfair font-bold text-center text-gray-900 gold-underline mb-10 sm:mb-14 lg:mb-16 px-4">
             Multimedia Stories
         </h2>
         
-        <!-- Desktop & Tablet - Center aligned pictures only -->
-        <div class="hidden sm:flex sm:flex-wrap sm:justify-center sm:items-center gap-6 lg:gap-8">
+        <!-- Desktop: 3 Images Full Width Row -->
+        <div class="hidden sm:flex sm:flex-row w-full h-[300px] sm:h-[400px] lg:h-[500px]">
             
-            <!-- Card 1 - Only Picture -->
-            <div class="fade-in-up rounded-2xl border-2 border-yellow-600 overflow-hidden hover-lift" 
-                 style="width: 190px; height: 290px;">
+            <!-- Image 1 -->
+            <div class="flex-1 border-2 border-yellow-600 overflow-hidden hover-lift m-1 sm:m-2 rounded-xl">
                 <img src="story1.jpg" alt="Story 1" 
                      class="w-full h-full object-cover"
-                     onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+1'">
+                     onerror="this.src='https://placehold.co/800x500/1a2744/c9a84c?text=Story+1'">
             </div>
             
-            <!-- Card 2 - Only Picture -->
-            <div class="fade-in-up rounded-2xl border-2 border-yellow-600 overflow-hidden hover-lift" 
-                 style="width: 190px; height: 290px;">
+            <!-- Image 2 -->
+            <div class="flex-1 border-2 border-yellow-600 overflow-hidden hover-lift m-1 sm:m-2 rounded-xl">
                 <img src="story2.jpg" alt="Story 2" 
                      class="w-full h-full object-cover"
-                     onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+2'">
+                     onerror="this.src='https://placehold.co/800x500/1a2744/c9a84c?text=Story+2'">
             </div>
             
-            <!-- Card 3 - Only Picture -->
-            <div class="fade-in-up rounded-2xl border-2 border-yellow-600 overflow-hidden hover-lift" 
-                 style="width: 190px; height: 290px;">
+            <!-- Image 3 -->
+            <div class="flex-1 border-2 border-yellow-600 overflow-hidden hover-lift m-1 sm:m-2 rounded-xl">
                 <img src="story3.jpg" alt="Story 3" 
                      class="w-full h-full object-cover"
-                     onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+3'">
+                     onerror="this.src='https://placehold.co/800x500/1a2744/c9a84c?text=Story+3'">
             </div>
             
         </div>
         
-        <!-- Mobile Swiper - Only Pictures -->
-        <div class="sm:hidden relative w-full flex justify-center">
-            <div class="overflow-hidden rounded-2xl" id="swiperContainer" style="width: 190px;">
+        <!-- Mobile: Swiper Slider -->
+        <div class="sm:hidden relative w-full px-4">
+            <div class="overflow-hidden rounded-xl" id="swiperContainer">
                 <div class="flex transition-transform duration-400 ease-out" id="swiperTrack">
                     
                     <!-- Slide 1 -->
-                    <div class="flex-shrink-0" style="width: 190px;">
-                        <div class="rounded-2xl border-2 border-yellow-600 overflow-hidden" 
-                             style="width: 190px; height: 290px;">
+                    <div class="flex-shrink-0 w-full px-1">
+                        <div class="border-2 border-yellow-600 rounded-xl overflow-hidden h-[250px]">
                             <img src="story1.jpg" alt="Story 1" class="w-full h-full object-cover"
-                                 onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+1'">
+                                 onerror="this.src='https://placehold.co/400x300/1a2744/c9a84c?text=Story+1'">
                         </div>
                     </div>
                     
                     <!-- Slide 2 -->
-                    <div class="flex-shrink-0" style="width: 190px;">
-                        <div class="rounded-2xl border-2 border-yellow-600 overflow-hidden" 
-                             style="width: 190px; height: 290px;">
+                    <div class="flex-shrink-0 w-full px-1">
+                        <div class="border-2 border-yellow-600 rounded-xl overflow-hidden h-[250px]">
                             <img src="story2.jpg" alt="Story 2" class="w-full h-full object-cover"
-                                 onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+2'">
+                                 onerror="this.src='https://placehold.co/400x300/1a2744/c9a84c?text=Story+2'">
                         </div>
                     </div>
                     
                     <!-- Slide 3 -->
-                    <div class="flex-shrink-0" style="width: 190px;">
-                        <div class="rounded-2xl border-2 border-yellow-600 overflow-hidden" 
-                             style="width: 190px; height: 290px;">
+                    <div class="flex-shrink-0 w-full px-1">
+                        <div class="border-2 border-yellow-600 rounded-xl overflow-hidden h-[250px]">
                             <img src="story3.jpg" alt="Story 3" class="w-full h-full object-cover"
-                                 onerror="this.src='https://placehold.co/190x290/1a2744/c9a84c?text=Story+3'">
+                                 onerror="this.src='https://placehold.co/400x300/1a2744/c9a84c?text=Story+3'">
                         </div>
                     </div>
                     
                 </div>
             </div>
-        </div>
-        
-        <!-- Dots Indicator (Mobile only) -->
-        <div class="sm:hidden flex justify-center items-center gap-2 mt-4" id="swiperDots">
-            <div class="swiper-dot active" data-index="0"></div>
-            <div class="swiper-dot" data-index="1"></div>
-            <div class="swiper-dot" data-index="2"></div>
+            
+            <!-- Dots Indicator -->
+            <div class="flex justify-center items-center gap-2 mt-4" id="swiperDots">
+                <div class="swiper-dot active" data-index="0"></div>
+                <div class="swiper-dot" data-index="1"></div>
+                <div class="swiper-dot" data-index="2"></div>
+            </div>
         </div>
         
     </div>
